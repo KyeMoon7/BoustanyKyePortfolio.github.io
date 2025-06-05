@@ -1,27 +1,25 @@
 :root {
     --primary: #ae00ff;
-    --secondary: #fffb00;
-    --third: #48ff00;
+    --secondary: #FBFF12;
+    --third: #41EAD4;
   }
   
 .navbar {
     width: 100%;
     height: 10%;
     font-size: 25px;
-    border-bottom: 5px solid white;
-    background-color: #000000;
+    background-color: #161515;
   }
   .navbar-brand {
-    color: var(--primary);
+    color: var(--third);
     font-size: 60px;
     padding-left: 5%;
     transition-property: color;
     transition-duration: 0.3s;
-    text-shadow: 2px 2px #d9ff00;
+    text-shadow: 2px 2px var(--primary);
   }
   .navbar-brand:hover {
-    color: var(--third);
-    text-shadow: 2px 2px #ae00ff;
+    color: var(--secondary);
   }
   .navbar-collapse {
     justify-content: flex-end;
@@ -32,7 +30,7 @@
     justify-content: space-between;
   }
   .navbar .nav-link {
-    color: rgb(97, 160, 255);
+    color: var(--third);
     font-style: normal;
   }
   .navbar .nav-item {
