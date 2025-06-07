@@ -88,8 +88,9 @@ body{
     z-index: 1;
   }
 
-  .hero .me{
+  .hero .glitch{
     width: 50%;
+  height: 85%;
     left: 37vw;
     top: 20vh;
     -webkit-mask-image: linear-gradient(#000000,  #000, rgba(0, 0, 0, 0));
@@ -102,7 +103,7 @@ body{
   .hero .introduction {
     font-size: 50px;
     top: 70%;
-    left: 30%;
+    left: 20%;
     transform: translate(-50%, -50%);
     z-index: 2;
     color: var(--third);
@@ -180,5 +181,39 @@ body{
     align-items: center;
     padding-top: 50vh;
     padding-bottom: 20vh;
+  }
+}
+
+.glitch{
+  width: 50vw;
+  height: 85vh;
+  background: url(/medias/photo-me-glitch.jpg);
+  background-size: cover;
+  animation-name: glitch;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(1);
+}
+
+@keyframes glitch {
+  0% , 100% {
+    background: url(/medias/photo-me-glitch.jpg);
+    background-size: cover;
+  }
+  92.5% {
+    background: url(/medias/glitch-image-1749317599.png);
+    background-size: cover;
+    opacity: 1;
+  }
+  95% {
+    background: url(/medias/glitch-image-1749317602.png);
+    background-size: cover;
+    opacity: 0;
+  }
+
+  97.5% {
+    background: url(/medias/glitch-image-1749317605.png);
+    background-size: cover;
+    opacity: 1;
   }
 }
