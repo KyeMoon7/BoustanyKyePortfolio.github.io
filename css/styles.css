@@ -5,7 +5,8 @@
   }
 
 body{
-  background-color: #000;
+  background-image: url(/medias/background.png);
+  background-size: 100vw;
 }
   
 .navbar {
@@ -13,6 +14,10 @@ body{
     height: 10%;
     font-size: 25px;
     background-color: #000;
+    font-family: "Tektur", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
   }
   .navbar-brand {
     color: var(--third);
@@ -86,11 +91,12 @@ body{
     object-fit: cover;
     object-position: 50% 100%;
     z-index: 1;
+
   }
 
   .hero .me{
     width: 50vw;
-    left: 37vw;
+    left: 37.7vw;
     top: 20vh;
     -webkit-mask-image: linear-gradient(#000000,  #000, rgba(0, 0, 0, 0));
     mask-image: linear-gradient(#000, rgb(0, 0, 0) 50%, #000, rgba(0, 0, 0, 0));
@@ -108,6 +114,10 @@ body{
     color: var(--third);
     display: inline-block;
     position: relative;
+    font-family: "Tektur", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
   }
 
   .hero .name {
@@ -115,6 +125,9 @@ body{
     line-height: 1;
     color: #ff206e;
     text-decoration: none;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 500;
+    font-style: normal;
   }
 
   .name:hover{
@@ -126,8 +139,8 @@ body{
   @media screen and (max-width: 992px) {
     .hero .introduction {
       font-size: 4vw;
-      left: 25vw;
-      top: 37vh;
+      left: 30vw;
+      top: 27vh;
 
     }
   }
@@ -167,6 +180,10 @@ body{
     font-size: 40px;
     text-align: center;
     color: var(--third);
+    font-family: "Tektur", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
   }
   
   .objectif {
