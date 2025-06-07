@@ -2,6 +2,7 @@
     --primary: #ae00ff;
     --secondary: #FBFF12;
     --third: #41EAD4;
+    --fourth:#ff206e;
   }
 
 body{
@@ -123,7 +124,7 @@ body{
   .hero .name {
     font-size: 250%;
     line-height: 1;
-    color: #ff206e;
+    color: var(--fourth);
     text-decoration: none;
     font-family: "Audiowide", sans-serif;
     font-weight: 500;
@@ -207,4 +208,50 @@ body{
     padding-top: 50vh;
     padding-bottom: 20vh;
   }
+}
+
+.anim{
+  padding: 10%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  color: var(--primary);
+  font-size: 4vw;
+}
+
+.anim .anim-img{
+  width: 50vw;
+}
+
+.anim-title{
+  text-decoration: none;
+}
+
+
+.anim-title{
+  position: relative;
+  color: var(--fourth);
+  text-decoration: none;
+}
+
+.anim-title::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  background-color: var(--secondary);
+  transition: 0.3s;
+}
+
+.anim-title:hover::after{
+  width: 100%;
 }
