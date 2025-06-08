@@ -112,7 +112,7 @@ body{
     left: 30%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    color: var(--third);
+    color: white;
     display: inline-block;
     position: relative;
     font-family: "Tektur", sans-serif;
@@ -180,13 +180,28 @@ body{
   .objectifText {
     font-size: 40px;
     text-align: center;
-    color: var(--third);
+    color: white;
     font-family: "Tektur", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
+
   }
   
+   .objectifText a{
+    text-decoration: none;
+    color: var(--primary);
+  }
+
+  .objectifText a:hover{
+    text-decoration: none;
+    color: var(--secondary);
+    transition: .3s;
+  }
+
+  
+ 
+
   .objectif {
     position: relative;
     display: flex;
@@ -210,7 +225,7 @@ body{
   }
 }
 
-.anim{
+/*.anim{
   padding: 10%;
   position: relative;
   display: flex;
@@ -254,4 +269,85 @@ body{
 
 .anim-title:hover::after{
   width: 100%;
+}*/
+
+.card {
+  border-radius: 25px;
+  transition: 0.3s;
+}
+.card-img-top {
+  border-radius: 25px;
+  border: var(--third) solid 2px;
+  object-fit: cover;
+  height: 500px;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 10px var(--secondary);
+}
+
+
+.portfolio-title {
+  font-size: 80px;
+  text-shadow: 4px 4px var(--primary);
+  font-weight: bold;
+  text-align: center;
+  color: var(--third);
+  font-family: "Tektur", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .portfolio-title {
+    font-size: 10vw;
+  }
+}
+
+
+
+.contact-title{
+  font-size: 60px;
+  text-shadow: 4px 4px var(--primary);
+  font-weight: bold;
+  color: var(--third);
+}
+
+footer {
+  height: 100%;
+  color: white;
+  background-image: linear-gradient(rgba(199, 0, 0, 0) 10%, var(--fourth));
+  font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+footer .py-2 {
+  align-items: center;
+  display: flex;
+}
+footer svg {
+  fill: white;
+  transition: 0.3s;
+}
+footer svg:hover {
+  fill: var(--secondary);
+}
+
+.footer-icons {
+  display: flex;
+}
+.footer-icons a {
+  padding-right: 2em;
+}
+
+.project-title{
+  margin-top: 10vh;
+  color: var(--fourth);
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Audiowide", sans-serif;
 }
