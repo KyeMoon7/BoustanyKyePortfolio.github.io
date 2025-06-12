@@ -283,7 +283,7 @@ body{
 }
 .card:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 10px 10px var(--secondary);
+  box-shadow: 0 0 15px 3px var(--secondary);
 }
 
 
